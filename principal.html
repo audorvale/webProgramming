@@ -1,20 +1,95 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Principal</title>
-    <meta name="description" content="prueba con html y css">
-    <meta name="keywords" content="HTML, CSS, JavaScript">
-    <link rel="stylesheet" href="estilo.css">
-</head>
-<nav>
-    <ul id="menu">
-        <li><a href="index.html"> Volver</a></li>
-    </ul>
-</nav>
-<body>
-    <p>work current</p>
-</body>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Principal</title>
+        <meta name="description" content="prueba con html y css">
+        <meta name="keywords" content="HTML, CSS, JavaScript">
+        <link rel="stylesheet" href="estilo.css">
+    </head>
+    <nav>
+        <ul id="menu">
+            <li><a href="index.html"> Volver</a></li>
+        </ul>
+    </nav>
+    <body>
+
+        <h2>
+            <p>Página principal</p>
+        </h2>
+
+        <div>
+            <div>
+                <h3>Acá va a encontrar ciertas instrucciones:</h3>
+            </div>
+
+            <div class="container">
+                <p>
+                    ¿QUÉ ES HTML?
+                    Actualmente la mayoría de las personas han visto cientos de páginas web pero muchos se preguntarán ¿Qué es HTML? ¿Para qué me sirve? ¿Cómo funciona? ¿Es difícil escribir en HTML? ¿Dónde puedo escribir HTML? Y otras preguntas como estas serán respondidas a continuación.
+
+                    Si buscas en GOOGLE o en cualquier otro buscador la definición de HTML, probablemente encontrarás está:
+
+                    “HTML es un lenguaje de marcado que se utiliza para el desarrollo de páginas de Internet. Se trata de la siglas que corresponden a HyperText Markup Language, es decir, Lenguaje de Marcas de Hipertexto”. 
+
+                    No obstante, este tipo de definiciones no nos dice mucho porque la definición es técnica. Para algunas personas al leer esto, piensan que HTML incluye el diseño gráfico de las páginas web, sin embargo, eso no es cierto ya que HTML sólo sirve para indicar como va ordenado el contenido de una página web. Esto lo hace por medio de las marcas de hipertexto las cuales son etiquetas conocidas en inglés como tags.
+                </p>
+            </div>
+
+            <div class="container2">
+                <p>
+                    Hasta el momento ya tenemos una idea sobre lo que hace HTML pero aún no sabemos cómo funcionan las etiquetas. Para esto vamos a imaginar que tienen que hacer un ensayo sobre algún tema, consideraremos que el ensayo será nuestra página web y la manera en la que va ordenado un ensayo es por un título, la introducción, el desarrollo y la conclusión, si se tiene en cuenta que esto nos dice cómo debe ir nuestro ensayo podemos considerar que éstas serían las etiquetas porque nos dicen la estructura que lleva, es decir, la forma en que se acomoda el texto en nuestro ensayo. Cabe mencionar que las etiquetas no sólo sirven para ordenar nuestro contenido sino que ayudan a los buscadores como Google, Yahoo search y muchos otros a encontrar la información por medio de las etiquetas.
+
+                    Ahora que entendemos el concepto de etiquetas, necesitamos poder identificarlas. Éstas se caracterizan porque van dentro de los caracteres menor que < y mayor que >, como en este ejemplo: <"nombre de la etiqueta">
+
+                    Aunque eso no es todo debido a que deben tener un inicio y un fin. El inicio de una etiqueta es normal, en otras palabras lleva los dos caracteres que mencioné anteriormente y dentro de estos se encuentra el nombre, sin embargo, existe una diferencia para el fin de la etiqueta ya que antes de escribir el nombre de la etiqueta debemos escribir una diagonal /.
+                </p>
+            </div>
+
+            <div class="container3">
+                <p>
+                    ¿Cuáles son las etiquetas HTML básicas?
+                    Hay una serie de etiquetas que son las más usadas para crear cualquier documento HTML, a continuación las explicamos:
+
+                    <"body"> para el contenido, 
+                    <"head"> para información sobre el documento, 
+                    <"div"> división dentro del contenido, 
+                    <"a"> para enlaces, 
+                    <"strong"> para poner el texto en negrita, 
+                    <"br"> para saltos de línea, 
+                    <"H1">…<"H6"> para títulos dentro del contenido, 
+                    <"img"> para añadir imágenes al documento, 
+                    <"ol"> para listas ordenadas, <"ul"> para listas desordenadas, <"li"> para elementos dentro de la lista
+                    <"p"> para parágrafos, 
+                    <"span"> para estilos de una parte del texto
+                    
+                </p>
+            </div>
+            
+            
+        </div>
+
+        <div class="formDudas">
+            <form method="post" >
+                <label style="font-weight: 300; font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;">Correo electrónico:</label>
+                <br>
+                <input type="text" placeholder="Ingrese acá su correo electrónico">
+                <br>
+                <label style="font-weight: 300; font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;">Teléfono Celular:</label>
+                <br>
+                <input type="text" placeholder="Ingrese acá su teléfono celular">
+                <br>
+                <label style="font-weight: 300; font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;">Dudas:</label>
+                <br>
+                <textarea name="Dudas" id="" cols="30" rows="10"></textarea>     
+                <br>
+                <br>
+                <button type="submit">Enviar</button>   
+            </form>
+
+        </div>
+        
+    </body>
 </html>

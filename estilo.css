@@ -83,13 +83,40 @@ figcaption {
 flex permite que se posicione dependiendo del espacio
 centra los elementos, define altura minima y su color */
 .container {
-    margin-top: 20%;
-    margin-bottom: 20%;
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	min-height: 100vh;
-	background-color: #ededed;
+    padding:5%;
+    text-align: justify;
+    background-color:darkgray;
+    border-radius: 5px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-justify: inter-word;
+}
+
+.container2 {
+    padding: 5%;
+    background-color: darkslategrey;
+    color: white;
+    text-align: justify;
+    border-radius: 5px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-justify: inter-word;
+}
+
+.container3 {
+    padding: 5%;
+    background-color: thistle;
+    border-radius: 5px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-justify: inter-word;
+    text-align: justify;
+
+}
+
+.formDudas{
+    text-align: center;
+    padding: 5%;
+    background-color: wheat;
+    border-radius: 5px;
+
 }
 
 /* anplica los estilos al elemento con la clase loader
