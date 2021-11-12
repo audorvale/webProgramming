@@ -36,6 +36,11 @@ aside {
     border: solid rgb(10, 100, 40);
     width:15%
 }
+section .agrupar img{
+    border-radius: 20%;
+    margin-left: 100px;
+}
+
 section {
     border: solid rgb(10, 100, 40);
     float:left;
@@ -64,7 +69,87 @@ time {
 figcaption {
     font: italic 14px verdana, sans-serif;
     }
-/* página 108
+
+
+/* este es el css para la animacion */
+
+/* anplica los estilos al elemento con la clase container
+flex permite que se posicione dependiendo del espacio
+centra los elementos, define altura minima y su color */
+.container {
+    margin-top: 20%;
+    margin-bottom: 20%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	min-height: 100vh;
+	background-color: #ededed;
+}
+
+/* anplica los estilos al elemento con la clase loader
+altura de forma auto, define limite de ancho y 
+stroke-linecap indica que cuando termine eltrazo efectue la accion de extender con semicirculo */
+.loader {
+	max-width: 15rem;
+	width: 100%;
+	height: auto;
+	stroke-linecap: round;
+}
+
+/*
+sue determina la creacion de el circulo y las modificaciones a los atributos al momento de animarlo */
+circle {
+	fill: none;
+	stroke-width: 3.5;
+	animation-name: preloader;
+	animation-duration: 3s;
+	animation-iteration-count: infinite;
+	animation-timing-function: ease-in-out;
+	transform-origin: 170px 170px;
+	will-change: transform;
+}
+
+/*referencia cada uno de los circle segun su pocosion en el html*/
+circle:nth-of-type(1) {
+    stroke-dasharray: 550px;
+  }
+  circle:nth-of-type(2) {
+    stroke-dasharray: 500px;
+  }
+  circle:nth-of-type(3) {
+    stroke-dasharray: 450px;
+  }
+  circle:nth-of-type(4) {
+    stroke-dasharray: 300px;
+  }
+  circle:nth-of-type(1) {
+    -webkit-animation-delay: -0.15s;
+            animation-delay: -0.15s;
+  }
+  circle:nth-of-type(2) {
+    -webkit-animation-delay: -0.3s;
+            animation-delay: -0.3s;
+  }
+  circle:nth-of-type(3) {
+    -webkit-animation-delay: -0.45s;
+            animation-delay: -0.45s;
+  }
+  circle:nth-of-type(4) {
+    -webkit-animation-delay: -0.6s;
+            animation-delay: -0.6s;
+  }
+
+@keyframes preloader {
+	50% {
+		transform: rotate(360deg);
+	}
+}
+
+
+
+/*fin css para la animacion */
+
+/* 
  para referenciar en css se usa el tipo de etiqeta, clase, nombre, herencia 
 * {margin: 0px;padding: 0px;} aplica los estilos a todos los elementos 
 p { font-size: 20px } tipo de etiqueta
