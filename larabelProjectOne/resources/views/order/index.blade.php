@@ -43,7 +43,7 @@
                             <small class="text-danger">*{{$message}}</small>
                             <br>
                         @enderror
-                        <button type="submit" class="btn btn-danger">
+                        <button type="submit" class="btn btn-success">
                             Vender
                         </button>
                     </form>
